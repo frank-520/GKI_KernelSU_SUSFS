@@ -62,10 +62,10 @@ jobs:
       version: ${{ inputs.version }}
       use_zram: ${{ inputs.use_zram }}
       use_kpm: ${{ inputs.use_kpm }}
-  get-ksu-manager:
-    if: ${{ inputs.get_manager }}
-    uses: ./.github/workflows/get-manager.yml
-    secrets: inherit
-    with:
-      kernelsu_variant: ${{ inputs.kernelsu_variant }}
+  # get-ksu-manager:
+  #   if: ${{ inputs.get_manager }}
+  #   uses: ./.github/workflows/get-manager.yml
+  #   secrets: inherit
+  #   with:
+  #     kernelsu_variant: ${{ inputs.kernelsu_variant }}
 
